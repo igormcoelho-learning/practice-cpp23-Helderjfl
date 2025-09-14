@@ -28,6 +28,9 @@ jobs:
         command: make test
         timeout: 2
         max-score: 100
+    - name: List files
+      run: |
+        ls -l
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
